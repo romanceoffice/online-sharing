@@ -1,0 +1,174 @@
+html, body {
+	height: 100%; 
+	width: 100%;	/*För att ändra storleken på file-diven gå in i html*/
+	overflow-y: hidden;
+	background-color: black;
+}
+
+h1 {
+	font-family: arial;
+	font-size: 30pt;
+	line-height: 34pt;
+}
+
+a {
+	color: white;
+}
+
+img {
+	width: 100%;
+}
+
+#file-div { 
+	display: block;
+	overflow-x: scroll;
+	height: 92vh;
+	width: 100vw;
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+}
+
+#file-div::-webkit-scrollbar {
+  width: 5px;
+  height: 13px;
+}
+/* Add a thumb */
+#file-div::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius:10px;
+    border: solid 2px black;
+}
+
+/*Allt om bilder*/
+.container {
+	display: inline-block;
+	margin-top: -2vh;
+	width: 24vw;
+	height: 65vh;
+	margin-left: 5vw;
+}
+
+.container img{
+	width: 23vw;
+	height:auto;
+	margin-left: .5vw;
+}
+
+.container img:hover {
+	width: 24vw;
+	margin: auto;
+}
+
+.container #biggie:hover {
+	width: 23vw;
+}
+
+.front-image {
+	display: inline-block;
+}
+
+.overlay {
+	opacity: 1;
+	height: 100%;
+	width: 100%;
+	display: none;
+}
+
+.container:hover .overlay {
+  display: block;
+  cursor: pointer;
+}
+
+.container:hover .front-image {
+  display: none;
+}
+
+/*Allt om bilder slut*/
+
+#top-menu {
+	position: fixed;
+	background-color: white;
+	top: 0;
+	left: 0;
+	height: 8vh;
+	width: 100vw;
+}
+
+#menu {
+	position: fixed;
+	left: 2vw;
+
+}
+
+#menu h1  {
+	font-size: 6vh;
+	/*margin-top: 1vh;*/
+	margin-top: 1.5vh;
+	color: black;
+	display: inline-block;
+	margin-left: 2vw;
+	text-transform: uppercase;
+}
+
+#menu h1:hover {
+	text-decoration: underline;
+}
+
+#logo {
+	position: fixed;
+	right: 50px;
+	top: 1.5vh;
+	width: 4vh;
+}
+
+.text-box {
+	margin-top: 20vh;
+	width: 70vw;
+	margin-left: 15vw;
+}
+
+.text-box h1 {
+	text-align: center;
+	color: white;
+}
+
+/*--SCROLLANDE TEXT START--*/
+.laur-marquee-outer{
+	position: fixed;
+	height: 8vh;
+	width: 100vw;
+	bottom: 0px;
+	left: 0px;
+	overflow: hidden;
+	background-color: white;
+}
+
+.laur-marquee-inner{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	animation: laurens-marquee infinite 20s linear;
+	width: auto;
+	min-width: 300%;
+	height: 40px;
+	position: absolute;
+}
+
+.laur-marquee-inner h1{
+	width: auto;
+	white-space: nowrap;
+	color: white;
+	font-size: 6.5vh;
+	/*margin-top: 1vh;*/
+	margin-top: 1.5vh;
+	/*font-style: italic;*/
+	color: black;
+	text-transform: uppercase;
+}
+
+@keyframes laurens-marquee{
+	0%{left: 0;}
+	100%{left: -200%;}
+}
+/*--SCROLLANDE TEXT SLUT--*/
+
