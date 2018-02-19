@@ -41,25 +41,25 @@ img {
 /*Allt om bilder*/
 .container {
 	display: inline-block;
-	margin-top: -2vh;
-	width: 24vw;
-	height: 65vh;
+	margin-top: -5vh;
+	width: 45vh;
+	height: 50vh;
 	margin-left: 5vw;
 }
 
 .container img{
-	width: 23vw;
+	width: 45vh;
 	height:auto;
 	margin-left: .5vw;
 }
 
 .container img:hover {
-	width: 24vw;
+	width: 47vh;
 	margin: auto;
 }
 
 .container #biggie:hover {
-	width: 23vw;
+	width: 50vh;
 }
 
 .front-image {
