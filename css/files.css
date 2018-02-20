@@ -32,7 +32,7 @@ img:hover {
 }
 
 .back-menu h1  {
-	font-size: 5vh;
+	font-size: 6vh;
 	color: white;
 	display: inline-block;
 	margin-left: 1vw;
@@ -47,8 +47,9 @@ img:hover {
 #logo {
 	position: fixed;
 	right: 50px;
-	top: 10px;
-	width: 5vh;
+	top: 1.5vh;
+	width: 30px;
+	mix-blend-mode: difference;
 }
 
 .images {
@@ -56,6 +57,7 @@ img:hover {
 	width: auto;
 	margin-top: 1vh;
 	-webkit-user-select: none;  /* Chrome all / Safari all */
+	z-index: 1;
 }
 
 .images img {
@@ -64,4 +66,5 @@ img:hover {
     margin-right: auto;
 	width: auto;
 	height: 100%;
+	z-index: 1;
 }

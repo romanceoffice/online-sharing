@@ -44,7 +44,7 @@ img {
 	margin-top: -5vh;
 	width: 45vh;
 	height: 50vh;
-	margin-left: 5vw;
+	margin-left: 5vh;
 }
 
 .container img{
@@ -59,7 +59,7 @@ img {
 }
 
 .container #biggie:hover {
-	width: 50vh;
+	width: 45vh;
 }
 
 .front-image {
@@ -117,12 +117,12 @@ img {
 	position: fixed;
 	right: 50px;
 	top: 1.5vh;
-	width: 4vh;
+	width: 30px;
 }
 
 .text-box {
 	margin-top: 20vh;
-	width: 70vw;
+	width: 900px;
 	margin-left: 15vw;
 }
 
