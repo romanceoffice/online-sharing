@@ -1,18 +1,31 @@
+/* TYPEFACES-------------------------------------- */
+
+@font-face {
+	font-family: 'Hershey-Duplex';
+	src: url('/assets/fonts/Hershey-Noailles-Times-Duplex-Regular.woff');
+}
+
+@font-face {
+	font-family: 'Hershey-Simplex';
+	src: url('/assets/fonts/Hershey-Noailles-Times-Simplex-Regular.woff');
+}
+
 html, body {
 	height: 100%; 
 	width: 100%;	/*För att ändra storleken på file-diven gå in i html*/
 	overflow-y: hidden;
-	background-color: black;
+	background-color: #fffea3;
 }
 
 h1 {
-	font-family: arial;
+	font-family: 'Hershey-Duplex', Arial, Helvetica, sans-serif;
 	font-size: 30pt;
 	line-height: 34pt;
 }
 
 a {
-	color: white;
+	font-family: 'Hershey-Simplex', Arial, 'Courier New', Courier, monospace;
+	color: blue;
 }
 
 img {
@@ -128,7 +141,7 @@ img {
 
 .text-box h1 {
 	text-align: center;
-	color: white;
+	color: black;
 }
 
 /*--SCROLLANDE TEXT START--*/
