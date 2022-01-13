@@ -1,3 +1,15 @@
+/* TYPEFACES-------------------------------------- */
+
+@font-face {
+	font-family: 'Hershey-Duplex';
+	src: url('/assets/fonts/Hershey-Noailles-Times-Duplex-Regular.woff');
+}
+
+@font-face {
+	font-family: 'Hershey-Simplex';
+	src: url('/assets/fonts/Hershey-Noailles-Times-Simplex-Regular.woff');
+}
+
 html, body {
 	width: 100%;
 	height: 100vh;
@@ -34,7 +46,7 @@ img:hover {
 
 .back-menu h1  {
 	font-size: 6vh;
-	color: white;
+	color: green;
 	display: inline-block;
 	margin-left: 1vw;
 	text-transform: uppercase;
